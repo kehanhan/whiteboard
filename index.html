@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>白板</title>
+  </head>
+  <body>
+    <div class="tools">
+      <svg id="brush" class="icon active" aria-hidden="true">
+        <use xlink:href="#icon-brush"></use>
+      </svg>
+      <svg id="eraser" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-eraser"></use>
+      </svg>
+      <svg id="trash" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-trash"></use>
+      </svg>
+      <svg id="download" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-download"></use>
+      </svg>
+    </div>
+    <div class="panel">
+      <ul class="colors">
+        <li id="black" class="active" style="background: black"></li>
+        <li id="red" style="background: red"></li>
+        <li id="yellow" style="background: yellow"></li>
+        <li id="blue" style="background: blue"></li>
+      </ul>
+      <ul class="sizes">
+        <li id="thin"></li>
+        <li id="medium" class="active"></li>
+        <li id="thick"></li>
+      </ul>
+    </div>
+    <canvas id="canvas"></canvas>
+
+    <script src="//at.alicdn.com/t/font_3306526_ser0q12r50l.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
