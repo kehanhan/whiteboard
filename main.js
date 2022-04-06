@@ -41,6 +41,8 @@ window.onresize = () => {
 black.onclick = () => {
   brushColor = "black";
   usingEraser = false;
+  brush.classList.add("active");
+  eraser.classList.remove("active");
   black.classList.add("active");
   red.classList.remove("active");
   yellow.classList.remove("active");
@@ -49,6 +51,8 @@ black.onclick = () => {
 red.onclick = () => {
   brushColor = "red";
   usingEraser = false;
+  brush.classList.add("active");
+  eraser.classList.remove("active");
   red.classList.add("active");
   black.classList.remove("active");
   yellow.classList.remove("active");
@@ -57,6 +61,8 @@ red.onclick = () => {
 yellow.onclick = () => {
   brushColor = "yellow";
   usingEraser = false;
+  brush.classList.add("active");
+  eraser.classList.remove("active");
   yellow.classList.add("active");
   red.classList.remove("active");
   black.classList.remove("active");
@@ -65,6 +71,8 @@ yellow.onclick = () => {
 blue.onclick = () => {
   brushColor = "blue";
   usingEraser = false;
+  brush.classList.add("active");
+  eraser.classList.remove("active");
   blue.classList.add("active");
   red.classList.remove("active");
   yellow.classList.remove("active");
